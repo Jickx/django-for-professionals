@@ -26,4 +26,4 @@ class HomePageTests(SimpleTestCase):
         self.assertEqual(
             view.func.__name__, 
             HomePageView.as_view().__name__
-        )  
+        )
