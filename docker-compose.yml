@@ -13,6 +13,7 @@ services:
     environment:
       - "DJANGO_SECRET_KEY=ltj_d5$$g%o+6+1nenolush-z74^vux_42c@izv3#og#0p=px(p"
       - "DJANGO_DEBUG=True"
+      - "SENDGRID_API_KEY=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"
   db:
     image: postgres:11
     volumes:
