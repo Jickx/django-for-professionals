@@ -7,6 +7,7 @@ from .models import Book
 from django.db.models import Q
 
 
+
 class BookListView(LoginRequiredMixin, ListView):
     model = Book
     context_object_name = 'book_list'
