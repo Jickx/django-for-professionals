@@ -14,6 +14,12 @@ services:
       - "DJANGO_SECRET_KEY=ltj_d5$$g%o+6+1nenolush-z74^vux_42c@izv3#og#0p=px(p"
       - "DJANGO_DEBUG=True"
       - "SENDGRID_API_KEY=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"
+      - "DJANGO_SECURE_HSTS_SECONDS=0"
+      - "DJANGO_SECURE_SSL_REDIRECT=False"
+      - "DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS=False"
+      - "DJANGO_SECURE_HSTS_PRELOAD=False"
+      - "DJANGO_SESSION_COOKIE_SECURE=False"
+      - "DJANGO_CSRF_COOKIE_SECURE=False"
   db:
     image: postgres:11
     volumes:
